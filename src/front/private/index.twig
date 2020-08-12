@@ -10,12 +10,9 @@
 </head>
 <body class="page {% block pageName %}{% endblock %}">
 <div class="page_wrapper container">
-  <header>
-    <h1>Header</h1>
-    <div class="typography">
-      <hr>
-    </div>
-  </header>
+  {% block header %}
+    {% include '@App/components/blocks/header/header.twig' %}
+  {% endblock %}
   <main class="page_wrapper__content">
     {% block pageContent %}
       <div class="typography">
