@@ -5,6 +5,11 @@
 //Variables
 @import '_helpers/scss/variables';
 
+//Core
+@import '_helpers/fonts/Barlow/Barlow';
+@import '_helpers/fonts/SFProDisplay/SFProDisplay';
+
+
 //Components
 @import 'components/typography/typography';
 @import 'components/blocks/page_wrapper/page_wrapper';
