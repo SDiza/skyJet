@@ -1,0 +1,193 @@
+.responsive_table {
+  overflow: auto;
+  border-radius: 9px;
+  .card-body {
+    min-width: 290px;
+  }
+  .pagination {
+    margin-top: 14px;
+    margin-bottom: 14px;
+  }
+  .custom-select {
+    max-width: 65px;
+  }
+  .responsive_table_size {
+    max-width: 410px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 14px;
+    margin-top: 14px;
+    margin-right: 14px;
+    &__select {
+      min-width: 190px;
+      margin-bottom: 0;
+    }
+  }
+  &__main {
+    padding: 0;
+  }
+  &__header{
+    padding: 4px 10px;
+  }
+  &__data {
+    width: 100%;
+    font-size: 13px;
+    line-height: 1.4;
+    margin-bottom: 0;
+    color: #000000;
+    thead {
+      background-color: rgba(0,0,0,.03);
+      th {
+        font-weight: 900;
+      }
+      tr {
+        display: none;
+      }
+    }
+    tbody tr {
+      td {
+        display: flex;
+        justify-content: space-between;
+        padding: 14px 10px;
+        background-color: #f6f6f6;
+      }
+      td:first-child {
+        color: #ffffff;
+        background-color: #666666;
+      }
+      td:nth-child(2) {
+        border-bottom: 1px solid rgba(0, 0, 0, .1);
+      }
+      td:before {
+        content: attr(data-th);
+        float: left;
+        min-width: 100px;
+        text-align: left;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+    }
+  }
+  table.responsive_table__data--sm {
+    thead tr {
+      @include media-breakpoint-up(sm) {
+        display: table-row;
+        border-top: 1px solid rgba(0, 0, 0, .1);
+        border-bottom: 1px solid rgba(0, 0, 0, .1);
+        th {
+          padding: 20px 10px;
+          font-size: 14px;
+          line-height: 1.1;
+          font-weight: 900;
+          color: #777777;
+          text-transform: uppercase;
+        }
+        th:first-child {
+          text-align: left;
+        }
+      }
+    }
+    tbody tr {
+      @include media-breakpoint-up(sm) {
+        &:not(:last-child) {
+          border-bottom: 1px solid rgba(0, 0, 0, .1);
+        }
+        td {
+          display: table-cell;
+          padding: 14px 10px;
+          background-color: #ffffff;
+        }
+        td:first-child {
+          text-align: left;
+          color: #000000;
+          background-color: #ffffff;
+        }
+        td:before {
+          content: none;
+        }
+      }
+    }
+  }
+  table.responsive_table__data--md {
+    thead tr {
+      @include media-breakpoint-up(md) {
+        display: table-row;
+        border-top: 1px solid rgba(0, 0, 0, .1);
+        border-bottom: 1px solid rgba(0, 0, 0, .1);
+        th {
+          padding: 20px 10px;
+          font-size: 14px;
+          line-height: 1.1;
+          font-weight: 900;
+          color: #777777;
+          text-transform: uppercase;
+        }
+        th:first-child {
+          text-align: left;
+        }
+      }
+    }
+    tbody tr {
+      @include media-breakpoint-up(md) {
+        &:not(:last-child) {
+          border-bottom: 1px solid rgba(0, 0, 0, .1);
+        }
+        td {
+          display: table-cell;
+          padding: 14px 10px;
+          background-color: #ffffff;
+        }
+        td:first-child {
+          text-align: left;
+          color: #000000;
+          background-color: #ffffff;
+        }
+        td:before {
+          content: none;
+        }
+      }
+    }
+  }
+  table.responsive_table__data--lg {
+    thead tr {
+      @include media-breakpoint-up(lg) {
+        display: table-row;
+        border-top: 1px solid rgba(0, 0, 0, .1);
+        border-bottom: 1px solid rgba(0, 0, 0, .1);
+        th {
+          padding: 20px 10px;
+          font-size: 14px;
+          line-height: 1.1;
+          font-weight: 900;
+          color: #777777;
+          text-transform: uppercase;
+        }
+        th:first-child {
+          text-align: left;
+        }
+      }
+    }
+    tbody tr {
+      @include media-breakpoint-up(lg) {
+        &:not(:last-child) {
+          border-bottom: 1px solid rgba(0, 0, 0, .1);
+        }
+        td {
+          display: table-cell;
+          padding: 14px 10px;
+          background-color: #ffffff;
+        }
+        td:first-child {
+          text-align: left;
+          color: #000000;
+          background-color: #ffffff;
+        }
+        td:before {
+          content: none;
+        }
+      }
+    }
+  }
+}
