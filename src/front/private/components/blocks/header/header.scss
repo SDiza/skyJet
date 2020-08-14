@@ -1,19 +1,17 @@
-.header{
-    &__top-inner{
+.header {
+    &__top-inner {
         display: flex;
         justify-content: space-between;
         align-items: center;
         min-height: 122px;
     }
     .menu {
-        font-family: "SF Pro Display Bold", sans-serif;
         &__item {
             display: inline-block;
             &+ .menu__item {
                 padding-left: 50px;
             }
         }
-
     }
 }
 
