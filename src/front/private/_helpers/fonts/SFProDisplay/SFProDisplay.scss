@@ -1,35 +1,33 @@
 @font-face {
-    font-family: 'SF Pro Display';
-    src: url('SFProDisplay-Bold.eot');
-    src: local('SF Pro Display Bold'), local('SFProDisplay-Bold'),
-    url('SFProDisplay-Bold.eot?#iefix') format('embedded-opentype'),
-    url('SFProDisplay-Bold.woff2') format('woff2'),
-    url('SFProDisplay-Bold.woff') format('woff'),
-    url('SFProDisplay-Bold.ttf') format('truetype');
-    font-weight: bold;
+    font-family: 'SFProDisplay-Regular', sans-serif;
+    src: url('SFProDisplay-Regular.woff2') format('woff2'),
+    url('SFProDisplay-Regular.woff') format('woff');
+    font-weight: 400;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: 'SF Pro Display';
-    src: url('SFProDisplay-Regular.eot');
-    src: local('SF Pro Display Regular'), local('SFProDisplay-Regular'),
-    url('SFProDisplay-Regular.eot?#iefix') format('embedded-opentype'),
-    url('SFProDisplay-Regular.woff2') format('woff2'),
-    url('SFProDisplay-Regular.woff') format('woff'),
-    url('SFProDisplay-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'SF Pro Display';
-    src: url('SFProDisplay-Medium.eot');
-    src: local('SF Pro Display Medium'), local('SFProDisplay-Medium'),
-    url('SFProDisplay-Medium.eot?#iefix') format('embedded-opentype'),
-    url('SFProDisplay-Medium.woff2') format('woff2'),
-    url('SFProDisplay-Medium.woff') format('woff'),
-    url('SFProDisplay-Medium.ttf') format('truetype');
+    font-family: 'SFProDisplay-Medium', sans-serif;
+    src: url('SFProDisplay-Medium.woff2') format('woff2'),
+    url('SFProDisplay-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'SFProDisplay-Semibold', sans-serif;
+    src: url('SFProDisplay-Medium.woff2') format('woff2'),
+    url('SFProDisplay-Medium.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'SFProDisplay-Bold', sans-serif;
+    src: url('SFProDisplay-Bold.woff2') format('woff2'),
+    url('SFProDisplay-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
 }

@@ -24,9 +24,9 @@ input[type='submit'] {
 body {
     min-width: $body-min-width;
     font-size: $font-size-body;
+    line-height: $line-height-body;
     font-family: $font-family-primary;
-    font-weight: 300;
-    font-style: normal;
+    font-weight: 400;
     color: $font-color-primary;
     &.body--overflow {
         overflow: hidden;
