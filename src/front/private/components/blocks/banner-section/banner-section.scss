@@ -1,0 +1,25 @@
+.banner-section {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__slider {
+        max-width: 870px;
+    }
+    &__slider-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        margin: 0;
+        padding: 0;
+        z-index: 5;
+        background-color: transparent;
+        border: none;
+    }
+    &__slider-btnprev {
+        left: 20px;
+    }
+    &__slider-btnnext {
+        right: 20px;
+    }
+}

@@ -67,17 +67,11 @@
         align-items: center;
         min-height: 53px;
         background-color: #f0f0f4;
-        &__item {
-            position: relative;
-        }
         &__link {
             transition: all .3s;
             font-weight: 400;
             padding: 15px 0 14px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            position: relative;
             &:hover {
                 text-shadow: 0 0 .65px #2f3035;
             }
