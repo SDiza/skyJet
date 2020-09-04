@@ -22,4 +22,17 @@
     &__slider-btnnext {
         right: 20px;
     }
+    .slick-dots {
+        bottom: 40px;
+        button {
+            width: 11px;
+            height: 11px;
+            background-color: transparent;
+            border: 1px solid #fff;
+            border-radius: 50%;
+        }
+        button:before {
+            content: none;
+        }
+    }
 }
