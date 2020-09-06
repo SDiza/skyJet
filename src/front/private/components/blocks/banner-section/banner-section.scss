@@ -63,18 +63,15 @@
             background-color: #1c62cd;
             color: #fff;
         }
-        .price {
-
-        }
         &__price-new {
-            font-family: $font-family-secondary-bold;
+            font-family: 'Barlow';
             font-size: 27px;
             line-height: 32px;
             font-weight: 700;
             color: #1c62cd;
         }
         &__price-old {
-            font-family: $font-family-secondary;
+            font-family: 'Barlow';
             font-weight: 400;
         }
     }
