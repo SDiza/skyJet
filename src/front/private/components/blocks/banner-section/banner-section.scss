@@ -53,6 +53,7 @@
         &__top {
             display: flex;
             justify-content: space-between;
+            align-items: flex-start;
         }
         &__info {
             text-transform: uppercase;
@@ -63,16 +64,47 @@
             background-color: #1c62cd;
             color: #fff;
         }
+        &__price {
+            text-align: right;
+        }
+        .price {
+            font-family: 'Barlow', sans-serif;
+            position: relative;
+        }
         &__price-new {
-            font-family: 'Barlow';
             font-size: 27px;
             line-height: 32px;
             font-weight: 700;
             color: #1c62cd;
+            margin-right: 6px;
+            padding-right: 20px;
+            &:after {
+                content: '';
+                position: absolute;
+                background-image: url('img/icons-price.svg');
+                right: 0;
+                width: 15px;
+                height: 18px;
+                top: 8px;
+            }
         }
         &__price-old {
-            font-family: 'Barlow';
+            display: inline-block;
             font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #c4c4c4;
+            margin-right: 15px;
+            background-image: url('img/old-line.svg');
+            &:after {
+                content: '';
+                position: absolute;
+                background-image: url('img/icons-price-old.svg');
+                right: -10px;
+                width: 8px;
+                height: 10px;
+                top: 5px;
+            }
         }
     }
 }
