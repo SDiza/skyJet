@@ -16,6 +16,10 @@
         background-color: transparent;
         border: none;
     }
+    &__slider-img {
+        object-fit: cover;
+        min-height: 400px;
+    }
     &__slider-btnprev {
         left: 20px;
     }
@@ -50,6 +54,9 @@
         text-align: center;
         border: 1px solid #cdcdcd;
         border-radius: 3px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
         &__top {
             display: flex;
             justify-content: space-between;
@@ -68,7 +75,7 @@
             text-align: right;
         }
         .price {
-            font-family: 'Barlow', sans-serif;
+            font-family: $font-family-secondary;
             position: relative;
         }
         &__price-new {
@@ -96,6 +103,8 @@
             color: #c4c4c4;
             margin-right: 15px;
             background-image: url('img/old-line.svg');
+            padding: 2px 5px;
+            background-repeat: no-repeat;
             &:after {
                 content: '';
                 position: absolute;
@@ -103,7 +112,28 @@
                 right: -10px;
                 width: 8px;
                 height: 10px;
-                top: 5px;
+                top: 7px;
+            }
+        }
+        &__img {
+            object-fit: contain;
+        }
+        &__title {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 21px;
+            margin-bottom: 7px;
+        }
+        &__footer {
+            background-color: #f0f0f4;
+            padding: 25px 20px;
+            font-size: 18px;
+            line-height: 21px;
+            span {
+                color: #1c62cd;
+                font-family: $font-family-secondary;
+                font-weight: 700;
+                display: block;
             }
         }
     }
