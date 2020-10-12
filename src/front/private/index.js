@@ -7,9 +7,11 @@ import 'slick-carousel/slick/slick';
 // import main from './pages/main/main';
 
 import bannerSlider from './components/blocks/banner-section/banner-section';
+import searchTabs from './components/blocks/search/search';
 
 $(document).ready(() => {
     bannerSlider.initSlider();
+    searchTabs.changeTabs();
     // responsiveTable();
     // main.addHandlers();
 });
